@@ -89,3 +89,68 @@ console.log(agregarcarrito1());
 console.log(agregarcarrito2());
 console.log(agregarcarrito3());
 console.log(agregarcarrito4());
+
+
+
+
+//<--------------Declaración de variables--------------->
+let nombreProducto = "Nike Skills Total 90";
+const precioProducto = 20.00;
+let disponibilidad = true;
+let tamaño = 4 ;
+let colores = ["Azul", "Rojo", "Verde"];
+
+//<--------------Datos Primitivos--------------->
+
+let cantidad = 6;               // numérico
+let color = "Rojo";             // string
+let enOferta = false;           // booleano
+let descuento = null;           // nulo
+let reseñas;                    // no definido
+
+//<--------------Datos Compuestos--------------->
+//Objeto
+let producto = {  
+  nombre: "Premier League Flight",
+  tipoProducto: "Balón de fútbol",
+  precio: 167.00,
+  color: "morado",
+  tallas: [1,2,3,4,5],  
+  enStock: disponible
+};
+
+ //<--------------Condicionales--------------->
+//if else
+if (disponible) {
+  console.log("Producto disponible para la compra");
+} else {
+  console.log("Producto no disponible");
+}
+
+
+if (tamaño >= 1 && tamaño <= 5){
+  console.log("Producto disponible en el tamaño seleccionado");
+} else{
+  console.log("Producto no disponible");
+}
+
+// operador ternario
+
+let mensaje = enOferta ? "Este producto tiene descuento " : "No está en oferta.";
+console.log(mensaje);
+
+let añadirCarrito = agregarProducto ? "Producto añadido al carrito" :" ";
+
+//Operador nullish
+let descuentoAplicado = 0;
+let descuentoFinal = descuentoAplicado ?? 5;
+
+console.log("Descuento final: " + descuentoFinal + "%");
+
+
+
+let nombreUsuario = null;
+let mostrarNombre = nombreUsuario ?? "Invitado";
+
+console.log("Bienvenido, " + mostrarNombre);
+
