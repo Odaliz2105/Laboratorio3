@@ -43,3 +43,49 @@ console.log(`Precio original: $${precioOriginal}`);
 console.log(`Precio con descuento: $${precioConDescuento.toFixed(2)}`);
 console.log(`Precio redondeado (casting): $${precioRedondeado}`);
 console.log(`Total a pagar por ${cantidadComprada} unidades (incluye envío): $${totalCompra.toFixed(2)}`);
+
+//comparaciones
+let airForce1 = 120
+let airForce2 = "120.00"
+console.log(airForce1 == airForce2);
+console.log(airForce1 === airForce2);
+console.log(airForce1 != airForce2);
+console.log(airForce1 !== airForce2);
+if (airForce1 == airForce2){
+  console.log("Son iguales")
+}else{
+  console.log("No son iguales")
+}
+
+//valores truty / falsy
+let colorAirForce1 = null;
+console.log(colorAirForce1 ?? "no hay colores disponibles");
+let tallaAirForce1 = ''
+console.log(tallaAirForce1 ? "si hay tallas":"no hay tallas disponibles");
+if (colorAirForce1 = null){
+  console.log("no hay colores disponibles")
+}
+//funciones
+console.log("--------FUNCIONES--------")
+// Funcion declarada
+function agregarcarrito(){
+  console.log("Producto agregado al carrito")
+}
+//Funcion expresada
+const agregarcarrito1 = function(){
+  console.log("Producto agregado al carrito")
+}
+
+//Funcion flecha
+const agregarcarrito2 = () => {
+  return "Producto ya agregado al carrito";
+}
+
+const agregarcarrito3 = () => "Producto ya agregado al carrito";
+const agregarcarrito4 = () => ("Producto ya agregado al carrito");
+
+console.log(agregarcarrito());
+console.log(agregarcarrito1());
+console.log(agregarcarrito2());
+console.log(agregarcarrito3());
+console.log(agregarcarrito4());
